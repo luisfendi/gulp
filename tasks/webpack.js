@@ -21,16 +21,4 @@ module.exports = function compileJs() {
     }))
     .pipe(uglify())
     .pipe(dest('dist/'))
-    .pipe(src('src/filtration.js'))
-    .pipe(webpack({
-      entry: './src/filtration.js',
-      mode: 'development',
-      watch: false,
-      output: {
-        filename: 'bundle.js',
-      },
-    }))
-    .pipe(uglify())
-    .pipe(dest('dist/'))
-
 }

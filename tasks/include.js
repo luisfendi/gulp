@@ -18,6 +18,8 @@ module.exports.html = function includeHtml() {
     .pipe(include())
     .pipe(dest('copy/'))
     .pipe(src('src/index.html'))
+    .pipe(dest('dist/'))
+    .pipe(src('src/index.html'))
     .pipe(include())
     .pipe(htmlmin({
       collapseWhitespace: true

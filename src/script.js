@@ -1,7 +1,11 @@
-// import {
-//   a
-// } from './menu/menu';
+console.log('lolofd dl')
 
-// console.log(a)
-console.log('a')
-console.log('b')
+window.addEventListener('scroll', () => {
+  console.log('scroll')
+})
+
+
+const btn = document.querySelector('.button');
+btn.addEventListener('click', () => {
+  scrollTo({top: 0})
+})
