@@ -1,0 +1,13 @@
+@import './style/main.scss';
+h1 {
+  color: rgb(179, 255, 0);
+}
+
+div {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: max-content;
+}
